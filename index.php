@@ -24,7 +24,9 @@
 
     <!-- Header -->
     <header>
-
+        <?php
+    include "layouts/components/nav.php";
+    ?>
         <!-- Carousel -->
         <div id="carousel" class="slide carousel" style="padding-top: 74px;">
             <ol class="carousel-indicators">
@@ -36,7 +38,6 @@
             </ol>
 
             <div class="carousel-inner">
-
             </div>
 
             <a class="carousel-control-prev control" href="#carousel" role="button" data-slide="prev">

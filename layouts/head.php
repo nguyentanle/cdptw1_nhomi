@@ -1,3 +1,12 @@
+<?php
+require urlPage . 'config/database.php';
+require urlPage . 'models/Database.php';
+require urlPage . 'models/Category.php';
+
+//Component
+
+?>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="<?php echo urlPage ?>public/images/icon-title.PNG" type="image/x-icon">
