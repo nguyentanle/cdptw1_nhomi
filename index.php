@@ -5,6 +5,10 @@
     <?php
     define('urlPage', '');
     require 'layouts/head.php';
+
+    $post = new Post();
+
+    $arrPost = $post->getAll();
     ?>
     <title>Trang chủ</title>
 </head>
@@ -82,12 +86,15 @@
                 <!-- post -->
                 <div class="row">
                     <div class="col-md-4 mb-md-5 mr-xs-2" data-scroll>
+                        <?php echo PostNormal::view($arrPost[0], urlPage) ?>
                     </div>
 
                     <div class="col-md-4 mb-md-5 mr-xs-2" data-scroll>
+                        <?php echo PostNormal::view($arrPost[1], urlPage) ?>
                     </div>
 
                     <div class="col-md-4 mb-md-5 mr-xs-2" data-scroll>
+                        <?php echo PostNormal::view($arrPost[2], urlPage) ?>
                     </div>
 
                     <div class="col-md-8 mr-xs-2 large" data-scroll>
