@@ -262,3 +262,73 @@ header #carousel .down-svg {
   z-index: 3;
   display: block;
 }
+
+.content section.new-posts {
+  margin: 15vh 0;
+}
+
+.post {
+  height: 450px;
+}
+
+.post .inner {
+  overflow: hidden;
+  position: relative;
+}
+
+.post .inner .img-post {
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.post .inner figcaption {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: auto;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  text-align: center;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+.post .inner figcaption .btn-quick-view {
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  -webkit-transform: translate3d(0, -200%, 0);
+  transform: translate3d(0, -200%, 0);
+}
+
+.post .inner:hover .img-post {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+.post .inner:hover figcaption .btn-quick-view {
+  -webkit-transform: translate3d(0, 200%, 0);
+  transform: translate3d(0, 200%, 0);
+}
+
+.post .post-body .post-title {
+  letter-spacing: 1.5px;
+}
+
+.post .post-body .post-title a {
+  color: #0e3746;
+}
+
+.post .post-body .post-sapo {
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+.post .post-body .post-date-up {
+  opacity: 0.8;
+  text-align: right;
+}

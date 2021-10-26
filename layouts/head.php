@@ -2,8 +2,11 @@
 require urlPage . 'config/database.php';
 require urlPage . 'models/Database.php';
 require urlPage . 'models/Category.php';
+require urlPage . 'models/Post.php';
 
 //Component
+require urlPage . 'layouts/components/DateUp.php';
+require urlPage . 'layouts/components/PostNormal.php';
 
 ?>
 
