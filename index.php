@@ -9,6 +9,11 @@
     $post = new Post();
 
     $arrPost = $post->getAll();
+    $arrCategory1 = $post->getByCategory(1);
+    $arrCategory2 = $post->getByCategory(2);
+    $arrCategory3 = $post->getByCategory(3);
+    $arrCategory4 = $post->getByCategory(4);
+    $arrCategory5 = $post->getByCategory(5);
     ?>
     <title>Trang chủ</title>
 </head>
@@ -42,6 +47,9 @@
             </ol>
 
             <div class="carousel-inner">
+                <?php
+            echo CarouselInner::view([$arrPost[0], $arrPost[1], $arrPost[2], $arrPost[3], $arrPost[4]], urlPage);
+            ?>
             </div>
 
             <a class="carousel-control-prev control" href="#carousel" role="button" data-slide="prev">
