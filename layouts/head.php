@@ -9,6 +9,9 @@ require urlPage . 'layouts/components/DateUp.php';
 require urlPage . 'layouts/components/PostNormal.php';
 require urlPage . 'layouts/components/CarouselItem.php';
 require urlPage . 'layouts/components/CarouselInner.php';
+require urlPage . 'layouts/components/PostSmall.php';
+require urlPage . 'layouts/components/PostLarge.php';
+require urlPage . 'layouts/components/ListPost.php';
 
 ?>
 
