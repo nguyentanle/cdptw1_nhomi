@@ -98,9 +98,13 @@
                     </div>
 
                     <div class="col-md-8 mr-xs-2 large" data-scroll>
+                        <?php echo PostLarge::view($arrPost[3], urlPage) ?>
                     </div>
 
                     <div class="col-md-4 mr-xs-2 list">
+                        <?php echo ListPost::view(
+                        [$arrPost[4], $arrPost[5], $arrPost[6], $arrPost[7]],
+                        urlPage) ?>
                     </div>
                 </div>
                 <!-- /post -->
