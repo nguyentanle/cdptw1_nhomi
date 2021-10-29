@@ -24,6 +24,7 @@
 
     <!-- Header -->
     <header>
+        <!-- Category -->
         <?php
     include "layouts/components/nav.php";
     ?>
