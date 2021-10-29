@@ -1,6 +1,6 @@
 <?php
 
-
+// Category
 class Category extends Database
 {
     public function getAll(){
