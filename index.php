@@ -85,7 +85,7 @@
 
     <!-- Content -->
     <div class="content">
-        <!-- New Post -->
+        <!-- New Post Le-->
         <section class="new-posts">
             <div class="container">
                 <h5 class="title mb-md-5">
