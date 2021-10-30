@@ -399,3 +399,61 @@ header #carousel .down-svg {
 .post-small .post-body h5 a:hover {
   color: #be2623;
 }
+
+/* footer */
+footer {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+footer .footer-left .logo {
+  height: 100%;
+  display: inline-block;
+}
+
+footer .footer-left .footer-social li {
+  margin: 0 10px;
+}
+
+footer .footer-left .footer-social li a {
+  position: relative;
+  color: #0e3746;
+  padding: 10px 15px;
+}
+
+footer .footer-left .footer-social li a:hover {
+  color: #fff;
+}
+
+footer .footer-left .footer-social li:nth-child(1) a:hover {
+  background-color: #007bff;
+}
+
+footer .footer-left .footer-social li:nth-child(2) a:hover {
+  background-color: #dc3545;
+}
+
+footer .footer-left .footer-social li:nth-child(3) a:hover {
+  background-color: #6f42c1;
+}
+
+footer .footer-left .footer-social li:nth-child(4) a:hover {
+  background-color: #28a745;
+}
+
+.go-top {
+  position: fixed;
+  cursor: pointer;
+  bottom: 15px;
+  right: 15px;
+  padding: 10px 15px;
+  background: #0e3746;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+.go-top:hover {
+  color: #fff;
+  background-color: #be2623;
+  border-radius: 50%;
+}
