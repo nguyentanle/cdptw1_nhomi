@@ -400,66 +400,60 @@ header #carousel .down-svg {
   color: #be2623;
 }
 
-.post-big {
+/* footer */
+footer {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+footer .footer-left .logo {
+  height: 100%;
+  display: inline-block;
+}
+
+footer .footer-left .footer-social li {
+  margin: 0 10px;
+}
+
+footer .footer-left .footer-social li a {
   position: relative;
-}
-
-.post-big .content {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.post-big .content .category {
-  font-size: 3.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.post-big .content h2 {
-  margin-top: 10px;
-  letter-spacing: 2px;
-}
-
-.post-big .content h2 a {
   color: #0e3746;
-  font-size: 2.5rem;
+  padding: 10px 15px;
 }
 
-.post-big .content .post-sapo {
-  margin-top: 5px;
-  font-size: 1.1rem;
-  letter-spacing: 2.5px;
+footer .footer-left .footer-social li a:hover {
+  color: #fff;
 }
 
-.post-big .img-post {
-  height: 500px;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+footer .footer-left .footer-social li:nth-child(1) a:hover {
+  background-color: #007bff;
 }
 
-.post-basic {
-  height: 100%;
+footer .footer-left .footer-social li:nth-child(2) a:hover {
+  background-color: #dc3545;
 }
 
-.post-basic .post-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+footer .footer-left .footer-social li:nth-child(3) a:hover {
+  background-color: #6f42c1;
+}
+
+footer .footer-left .footer-social li:nth-child(4) a:hover {
+  background-color: #28a745;
+}
+
+.go-top {
+  position: fixed;
+  cursor: pointer;
+  bottom: 15px;
+  right: 15px;
+  padding: 10px 15px;
+  background: #0e3746;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+.go-top:hover {
+  color: #fff;
+  background-color: #be2623;
+  border-radius: 50%;
 }
