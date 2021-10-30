@@ -17,6 +17,7 @@ $arrCategory = $category->getAll();
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <!-- Category -->
                 <?php
                 foreach ($arrCategory as $item) {
                     

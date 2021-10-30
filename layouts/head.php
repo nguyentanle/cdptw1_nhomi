@@ -12,6 +12,9 @@ require urlPage . 'layouts/components/CarouselInner.php';
 require urlPage . 'layouts/components/PostSmall.php';
 require urlPage . 'layouts/components/PostLarge.php';
 require urlPage . 'layouts/components/ListPost.php';
+require urlPage . 'layouts/components/PostBig.php';
+require urlPage . 'layouts/components/PostBasic.php';
+require urlPage . 'layouts/components/PagePostDepCate.php';
 
 ?>
 

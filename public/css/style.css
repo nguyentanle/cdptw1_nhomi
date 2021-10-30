@@ -332,3 +332,128 @@ header #carousel .down-svg {
   opacity: 0.8;
   text-align: right;
 }
+.post-large {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.post-large .inner {
+  width: 200%;
+}
+
+.post-large .inner .img-post {
+  height: 450px;
+}
+
+.post-large .inner:hover figcaption .btn-quick-view {
+  -webkit-transform: translate3d(0, 500%, 0);
+  transform: translate3d(0, 500%, 0);
+}
+
+.post-large .post-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 450px;
+}
+
+.post-large .post-body .post-title {
+  letter-spacing: 3px;
+  font-size: 2rem;
+}
+
+.post-large .post-body .post-sapo {
+  font-size: 1.1rem;
+}
+
+.list-post .post-small {
+  margin-bottom: 15px;
+}
+
+.post-small {
+  height: 100px;
+}
+
+.post-small .inner .img-post {
+  width: 100px;
+  height: 100px;
+}
+
+.post-small .post-body h5 a {
+  color: #0e3746;
+  font-size: 1rem;
+}
+
+.post-small .post-body h5 a:hover {
+  color: #be2623;
+}
+
+/* footer */
+footer {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+footer .footer-left .logo {
+  height: 100%;
+  display: inline-block;
+}
+
+footer .footer-left .footer-social li {
+  margin: 0 10px;
+}
+
+footer .footer-left .footer-social li a {
+  position: relative;
+  color: #0e3746;
+  padding: 10px 15px;
+}
+
+footer .footer-left .footer-social li a:hover {
+  color: #fff;
+}
+
+footer .footer-left .footer-social li:nth-child(1) a:hover {
+  background-color: #007bff;
+}
+
+footer .footer-left .footer-social li:nth-child(2) a:hover {
+  background-color: #dc3545;
+}
+
+footer .footer-left .footer-social li:nth-child(3) a:hover {
+  background-color: #6f42c1;
+}
+
+footer .footer-left .footer-social li:nth-child(4) a:hover {
+  background-color: #28a745;
+}
+
+.go-top {
+  position: fixed;
+  cursor: pointer;
+  bottom: 15px;
+  right: 15px;
+  padding: 10px 15px;
+  background: #0e3746;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+.go-top:hover {
+  color: #fff;
+  background-color: #be2623;
+  border-radius: 50%;
+}
