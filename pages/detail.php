@@ -27,7 +27,7 @@
     </header>
     <!-- /Header -->
 
-    <!-- Content -->
+    <!-- Content Details-->
     <div class="content" style="margin: 100px 0;">
         <div class="container">
             <div class="row">
