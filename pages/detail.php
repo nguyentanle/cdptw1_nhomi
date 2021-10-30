@@ -64,6 +64,7 @@
                     
                 </div>
 
+                <!--Related Posts-->
                 <div class="col-md-4">
                     <h5 style="margin-top: 30px; margin-bottom: 20px;">Tin liên quan</h5>
 
