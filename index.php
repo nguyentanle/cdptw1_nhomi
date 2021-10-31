@@ -33,6 +33,7 @@
 
     <!-- Header -->
     <header>
+        <!-- Category -->
         <?php
     include "layouts/components/nav.php";
     ?>
@@ -84,7 +85,7 @@
 
     <!-- Content -->
     <div class="content">
-        <!-- New Post -->
+        <!-- New Post Le-->
         <section class="new-posts">
             <div class="container">
                 <h5 class="title mb-md-5">
@@ -123,6 +124,16 @@
         <!-- Post Dependent Category -->
         <section class="posts-dep-cate">
             <div class="container">
+                <hr>
+                <?php echo pagePostDepCate::view($arrCategory1, urlPage, true) ?>
+                <hr>
+                <?php echo pagePostDepCate::view($arrCategory2, urlPage, false) ?>
+                <hr>
+                <?php echo pagePostDepCate::view($arrCategory3, urlPage, true) ?>
+                <hr>
+                <?php echo pagePostDepCate::view($arrCategory4, urlPage, false) ?>
+                <hr>
+                <?php echo pagePostDepCate::view($arrCategory5, urlPage, true) ?>
             </div>
         </section>
         <!-- /Post Dependent Category -->

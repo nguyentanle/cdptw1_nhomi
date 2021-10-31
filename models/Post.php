@@ -10,6 +10,17 @@ class Post extends Database
 
         return $sql->get_result()->fetch_all(MYSQLI_ASSOC);
     }
+
+    public function getByID($idPost){
+        $sql = self::$connect->prepare(
+            "SELECT * FROM `post`, `category` 
+                    WHERE post.ID_CATEGORY = category.ID_CATEGORY 
+                    AND post.ID_POST = $idPost");
+        $sql->execute();
+
+        return $sql->get_result()->fetch_all(MYSQLI_ASSOC)[0];
+    }
+
     public function getByCategory($idCategory){
         $sql = self::$connect->prepare(
             "SELECT * FROM `post`, `category` 
