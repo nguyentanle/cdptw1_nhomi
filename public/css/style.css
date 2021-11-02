@@ -485,8 +485,37 @@ header #carousel .down-svg {
 }
 
 /* Comment */
+.comment {
+  background: #fff;
+  padding: 10px;
+  position: relative;
+}
 
-/* Comment */
+.list-comment .comment-item {
+  border: 1px solid #ddd;
+  background-color: #f5f5f5ce;
+  border-radius: 10px;
+  margin: 5px 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+.list-comment .comment-item .body {
+  padding: 10px;
+  margin: 0;
+}
+
+.list-comment .comment-item .body .name {
+  font-weight: bold;
+}
+
+.list-comment .comment-item .date-up {
+  text-align: right;
+  font-size: 0.7rem;
+  padding: 0 50px;
+  margin: 0;
+}
+
 .form-post input {
   background-color: #f7f7f9;
 }
