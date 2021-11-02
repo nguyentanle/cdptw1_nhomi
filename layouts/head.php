@@ -3,6 +3,7 @@ require urlPage . 'config/database.php';
 require urlPage . 'models/Database.php';
 require urlPage . 'models/Category.php';
 require urlPage . 'models/Post.php';
+require urlPage . 'models/Comment.php';
 
 //Component
 require urlPage . 'layouts/components/DateUp.php';
@@ -15,6 +16,8 @@ require urlPage . 'layouts/components/ListPost.php';
 require urlPage . 'layouts/components/PostBig.php';
 require urlPage . 'layouts/components/PostBasic.php';
 require urlPage . 'layouts/components/PagePostDepCate.php';
+require urlPage . 'layouts/components/CommentItem.php';
+require urlPage . 'layouts/components/ListComment.php';
 
 ?>
 
