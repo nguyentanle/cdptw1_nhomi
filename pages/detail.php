@@ -61,10 +61,50 @@
 
                     <hr>
 
-                    
+                    <!-- Comment -->
+                    <div class="comment shadow">
+                        <h5>Bình luận:</h5>
+
+                        <?php
+                    $comment = new Comment();
+                    $listComment = $comment->getByIDPost($postDetail['ID_POST']);
+
+                    echo ListComment::view($listComment);
+                    if (!empty($_SESSION['comment']['post'])) {
+                        echo $_SESSION['comment']['post'];
+                    }
+                    ?>
+
+                        <hr>
+                        <form id="FormComment" method="post" class="form-post"
+                            onsubmit="event.preventDefault(); postComment()">
+                            <div class="form-row">
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" placeholder="Tên..." name="username"
+                                        id="username" required>
+                                </div>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" placeholder="Viết bình luận..." id="content"
+                                        name="comment" required>
+                                </div>
+                                <input style="display: none" value="<?php echo $postDetail['ID_POST'] ?>" id="idPost"
+                                    name="idPost">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-danger form-control">Đăng</button>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="bg-circle">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <!-- /Comment -->
                 </div>
 
-                <!--Related Posts-->
+                <!--Bai viet lien quan-->
                 <div class="col-md-4">
                     <h5 style="margin-top: 30px; margin-bottom: 20px;">Tin liên quan</h5>
 
