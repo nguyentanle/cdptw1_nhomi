@@ -4,9 +4,10 @@
 <head>
     <?php
     define('urlPage', '');
-    require 'layouts/head.php';
+    require urlPage . 'layouts/head.php';
 
-    $post = new Post();
+    $factory = new FactoryPattern();
+    $post = $factory->make('post');
 
     $arrPost = $post->getAll();
     $arrCategory1 = $post->getByCategory(1);

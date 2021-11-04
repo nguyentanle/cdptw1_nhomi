@@ -1,12 +1,10 @@
 <?php
 session_start();
 
-require $_GET['urlPage'] . 'config/database.php';
-require $_GET['urlPage'] . 'models/Database.php';
-require $_GET['urlPage'] . 'models/Comment.php';
-require '../layouts/components/ListComment.php';
-require '../layouts/components/CommentItem.php';
-require '../layouts/components/DateUp.php';
+require 'head.php';
+
+$factory = new FactoryPattern();
+$comment = $factory->make('comment');
 
 $comment = new Comment();
 if (!empty($_GET['idPost'])) {
@@ -18,4 +16,5 @@ if (!empty($_GET['idPost'])) {
         echo $_SESSION['comment']['post'];
         unset($_SESSION['comment']['post']);
     }
+    echo('đây nè');
 }
