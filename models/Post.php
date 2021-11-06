@@ -1,6 +1,8 @@
 <?php
 class Post extends Database
 {
+    protected static $_instance;
+
     public function getAll(){
         $sql = self::$connect->prepare(
             "SELECT * FROM `post`, `category` 
@@ -42,6 +44,14 @@ class Post extends Database
         $sql->execute();
 
         return $sql->get_result()->fetch_all(MYSQLI_ASSOC);
+    }
+
+    public static function getInstance() {
+        if (self::$_instance !== null){
+            return self::$_instance;
+        }
+        self::$_instance = new self();
+        return self::$_instance;
     }
 }
 ?>
