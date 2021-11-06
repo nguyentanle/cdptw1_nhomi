@@ -31,5 +31,17 @@ class Post extends Database
 
         return $sql->get_result()->fetch_all(MYSQLI_ASSOC);
     }
+
+    public function getByTitle($key){
+        $key = '%' . $key . '%';
+        $sql = self::$connect->prepare(
+            "SELECT * FROM `post`, `category` 
+                    WHERE post.ID_CATEGORY = category.ID_CATEGORY
+                    AND TITLE LIKE ?");
+        $sql->bind_param('s', $key);
+        $sql->execute();
+
+        return $sql->get_result()->fetch_all(MYSQLI_ASSOC);
+    }
 }
 ?>

@@ -1,5 +1,8 @@
 <?php
-$category = new Category();
+
+$factory = new FactoryPattern();
+$category = $factory->make('cate');
+
 $arrCategory = $category->getAll();
 ?>
 
