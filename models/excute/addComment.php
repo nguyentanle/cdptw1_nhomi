@@ -2,11 +2,13 @@
 session_start();
 
 if (!empty($_GET['username']) && !empty($_GET['comment']) && !empty($_GET['idPost'])) {
-    require '../../config/database.php';
-    require '../../models/Database.php';
-    require '../../models/Comment.php';
+     require '../../config/database.php';
+     require '../../models/Database.php';
+     require '../../models/FactoryPattern.php';
+    
+    $factory = new FactoryPattern();
+    $comment = $factory->make('comment');
 
-    $comment = new Comment();
     $username = $_GET['username'];
     $content = $_GET['comment'];
     $idPost = $_GET['idPost'];

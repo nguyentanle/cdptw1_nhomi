@@ -6,7 +6,8 @@
     define('urlPage', '../');
     require urlPage . 'layouts/head.php';
 
-    $post = new Post();
+    $factory = new FactoryPattern();
+    $post = $factory->make('post');
 
     $postDetail = [];
 
