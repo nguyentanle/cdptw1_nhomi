@@ -41,8 +41,8 @@
         while($row=mysqli_fetch_array($query)){
     ?>
                 <tr>
-                    <td><?php echo $row['id_category']; ?></td>
-                    <td><?php echo $row['NAME']; ?></td>
+                    <td><?php echo htmlentities($row['id_category']); ?></td>
+                    <td><?php echo htmlentities($row['NAME']); ?></td>
                     <td class="icon"><a href="../pages/search.php?idCategory=<?php echo $row['id_category']; ?>"><i
                                 class="fa fa-eye" aria-hidden="true" title="View"></i></a></td>
                     <td class="icon"><a href="cate_edit.php?id_category=<?php echo $row['id_category']; ?>"><i

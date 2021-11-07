@@ -8,8 +8,9 @@
 require 'posts_connect.php';
 // Up bài viết
 if (isset($_POST['btn_submit'])) {
-    $id_cate = $_POST['id_cate'];
-    $name = $_POST['name'];
+    //XSS
+    $id_cate = htmlentities($_POST['id_cate']);
+    $name = htmlentities($_POST['name']);
 
         $sql = "INSERT INTO category(id_category, NAME ) VALUES ( '$id_cate', '$name' )";
         if (mysqli_query($conn, $sql)){

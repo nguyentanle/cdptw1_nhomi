@@ -49,6 +49,7 @@
                     while($row=mysqli_fetch_array($resulte)){
                 ?>
                 <tr>
+                    <!--XSS-->
                     <td><?php echo htmlentities($row['ID_POST']); ?></td>
                     <td><?php echo "<img src='../public/images/".$row['IMAGE1']."' height=70px width = 90px>"?></td>
                     <td><?php echo htmlentities($row['TITLE']); ?></td>
