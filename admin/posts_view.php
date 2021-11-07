@@ -49,10 +49,11 @@
                     while($row=mysqli_fetch_array($resulte)){
                 ?>
                 <tr>
-                    <td><?php echo $row['ID_POST']; ?></td>
+                    <!--XSS-->
+                    <td><?php echo htmlentities($row['ID_POST']); ?></td>
                     <td><?php echo "<img src='../public/images/".$row['IMAGE1']."' height=70px width = 90px>"?></td>
-                    <td><?php echo $row['TITLE']; ?></td>
-                    <td><?php echo $row['SAPO']; ?></td>
+                    <td><?php echo htmlentities($row['TITLE']); ?></td>
+                    <td><?php echo htmlentities($row['SAPO']); ?></td>
                     <td class="icon"><a href="../pages/detail?idPost=<?php echo $row['ID_POST']; ?>"><i
                                 class="fa fa-eye" aria-hidden="true" title="View"></i></a></td>
                     <td class="icon"><a href="posts_edit.php?ID_POST=<?php echo $row['ID_POST']; ?>"><i
