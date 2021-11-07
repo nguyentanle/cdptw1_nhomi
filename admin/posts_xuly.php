@@ -9,6 +9,7 @@
 require 'posts_connect.php';
 // Up bài viết
 if (isset($_POST['btn_submit'])) {
+    //XSS
     $title = htmlentities($_POST['title']);
     $header = htmlentities ($_POST['header']);
     $content = htmlentities($_POST['content']);
