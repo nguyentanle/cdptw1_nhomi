@@ -14,7 +14,10 @@
 // Kết nối Database
 include 'posts_connect.php';
 $id=$_GET['ID_POST'];
-$query=mysqli_query($conn,"select * from `post` where ID_POST='$id'");
+$rmfId = substr($id, 3);
+$rmlId = substr($rmfId, 0, -3);
+
+$query=mysqli_query($conn,"select * from `post` where ID_POST='$rmlId'");
 $row=mysqli_fetch_assoc($query);
 ?>
 
