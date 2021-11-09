@@ -12,7 +12,7 @@ class PostBig
                         <div class="content">
                             <p class="category">' . $post['NAME'] . '</p>
                             <h2 class="hv-l">
-                                <a href="' . $urlPage . 'pages/detail.php?idPost=' . $post['ID_POST'] . '">
+                                <a href="' . $urlPage . 'pages/detail.php?idPost=' . rand(100, 999) . $post['ID_POST'] . rand(100, 999) . '">
                                 ' . $post['TITLE'] . '
                                 </a>
                             </h2>
@@ -34,7 +34,7 @@ class PostBig
                         <div class="content">
                             <p class="category">' . $post['NAME'] . '</p>
                             <h2 class="hv-l">
-                                <a href="' . $urlPage . 'pages/detail.php?idPost=' . $post['ID_POST'] . '">
+                                <a href="' . $urlPage . 'pages/detail.php?idPost=' . rand(100, 999) . $post['ID_POST'] . rand(100, 999) . '">
                                 ' . $post['TITLE'] . '
                                 </a>
                             </h2>

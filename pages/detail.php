@@ -11,10 +11,15 @@
 
     $postDetail = [];
 
-    if (!isset($_GET['idPost']) || empty($_GET['idPost'])) {
+    $idFirst = $_GET['idPost'];
+    $rmFirst = substr($idFirst, 3);
+    $rmLast = substr($rmFirst, 0, -3);
+    $id = $rmLast;
+
+    if (!isset($id) || empty($id)) {
         header('location: ../');
     } else {
-        $postDetail = $post->getByID($_GET['idPost']);
+        $postDetail = $post->getByID($id);
     }
 
     $arrPostMore = $post->getByCategory($postDetail['id_category']);

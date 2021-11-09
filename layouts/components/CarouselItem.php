@@ -15,7 +15,7 @@ class CarouselItem
 
                 <div class="carousel-caption">
                     <h5 '. $fontSize .'>
-                        <a href="' . $urlPage . 'pages/detail.php?idPost=' . $post['ID_POST'] . '">
+                        <a href="' . $urlPage . 'pages/detail.php?idPost=' . rand(100, 999) . $post['ID_POST'] . rand(100, 999) . '">
                             ' . $post['TITLE'] . '
                         </a>
                     </h5>
