@@ -54,9 +54,10 @@ die("Connection failed: " . $conn->connect_error);
 }
 
 $sql = "UPDATE `category` SET NAME='$name' WHERE id_category='$id'";
+$conn->set_charset('utf8');
 
 if ($conn->query($sql) === TRUE) {
-echo "Record updated successfully";
+header("Location: cate_view.php");
 } else {
 echo "Error updating record: " . $conn->error;
 }
