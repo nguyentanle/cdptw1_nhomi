@@ -67,7 +67,7 @@ $row=mysqli_fetch_assoc($query);
     </section>
     <?php
 if (isset($_POST['update_post'])){
-$id=$_GET['ID_POST'];
+$id=$rmlId;
 $title=$_POST['title'];
 $sapo=$_POST['sapo'];
 $content=$_POST['content'];
