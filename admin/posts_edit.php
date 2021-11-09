@@ -84,9 +84,10 @@ if ($conn->connect_error) {
 }
 
     $sql = "UPDATE `post` SET TITLE='$title', SAPO='$sapo',CONTENT='$content', ID_CATEGORY='$id_cate', IMAGE1='$image' WHERE ID_POST='$id'";
+    $conn->set_charset('utf8');
 
 if ($conn->query($sql) === TRUE) {
-    echo "Record updated successfully";
+    header("Location: posts_view.php");
 } else {
     echo "Error updating record: " . $conn->error;
 }
