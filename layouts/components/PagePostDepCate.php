@@ -29,7 +29,7 @@ class PagePostDepCate
                     ' . PostNormal::view($arrPostDepCate[1], $urlPage) . '
                 </div>
                 <div class="col-md-4 mb-md-5 mr-xs-2">
-                    ' . PostBasic::view($arrPostDepCate[2], $urlPage) . '
+                    ' . PostNormal::view($arrPostDepCate[2], $urlPage) . '
                 </div>
                 <div class="col-md-4 mb-md-5 mr-xs-2">
                     ' . ListPost::view($arrList, $urlPage) . '
