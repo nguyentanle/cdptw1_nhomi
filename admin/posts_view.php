@@ -53,7 +53,8 @@
                     <td><?php echo "<img src='../public/images/".$row['IMAGE1']."' height=70px width = 90px>"?></td>
                     <td><?php echo htmlentities($row['TITLE']); ?></td>
                     <td><?php echo htmlentities($row['SAPO']); ?></td>
-                    <td class="icon"><a href="../pages/detail?idPost=<?php echo $row['ID_POST']; ?>"><i
+                    <td class="icon"><a
+                            href="../pages/detail?idPost=<?php echo  rand(100, 999) . $row['ID_POST'] . rand(100, 999); ?>"><i
                                 class="fa fa-eye" aria-hidden="true" title="View"></i></a></td>
                     <td class="icon"><a
                             href="posts_edit.php?ID_POST=<?php echo rand(100, 999) . $row['ID_POST'] . rand(100, 999); ?>"><i
